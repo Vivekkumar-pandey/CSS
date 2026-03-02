@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+
+    <style>
+        /* Universal Selector */
+
+        /* 
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        } 
+            */
+
+        /* Element Selector */
+
+        /* 
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        h1{
+            background-color: yellow;
+            color:aqua
+        }
+
+        p{
+            background-color: blueviolet;
+            color: chartreuse;
+            margin: 10px;
+            padding: 10px;
+        }  */
+
+
+        /* ID Selector (#) */
+        /* 
+        #para {
+            color: blue;
+        } */
+
+        /* Class Selector (.)*/
+        /* 
+        .para {
+            color: red;
+        } */
+
+        /* Group Selector */
+
+        /*
+         h1,
+        h2,
+        p {
+            background-color: yellow;
+            color: aqua;
+        } 
+            */
+
+        /* Desendent Selector  */
+        /*  
+         div p {
+            color: red;
+        } */
+
+
+        /* Child Selector */
+
+        /* div > p{
+            color: blue;
+        } */
+
+        /* Adjecent Sibiling Selector */
+        /* div + p {
+            color: aqua;
+        } */
+
+        /* General Sibiling Selector */
+        /* 
+        div~p {
+            color: aqua;
+        } */
+
+        /* Attribute Selector */
+
+        /* input {
+            background-color: aqua;
+        } */
+
+        /* input[type="text"]{
+            background-color: red;
+            color: aqua;
+        }
+
+        input[type="password"]{
+            background-color: blue;
+        }
+
+        input[type="email"]{
+            background-color: purple;
+        } */
+
+        /* Pseduo Class Selector */
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        a:visited{
+            color: chartreuse;
+        }
+
+        h2:hover{
+            background-color: red;
+        }
+
+        li:first-child{
+            color: red;
+        }
+
+        li:last-child{
+            color: purple;
+        }
+
+        li:nth-child(2){
+            color: green;
+        }
+
+        /* Pseduo Element */
+
+
+        /* p{
+            color: blue;
+        } */
+
+        /* p::first-line{
+            color: blue;
+        } */
+
+         /* p::first-letter{
+            color: blue;
+            font-size: 40px;
+        } */
+
+        p::before{
+           content: "※ ";
+        }
+
+         p::after{
+           content: " ※";
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+    <h1>This is Heading</h1>
+
+    <h2>This is Heading 2</h2>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae facere saepe cum. Adipisci quo quas odio non amet
+        fugiat accusamus, ab hic sunt, magnam ipsum officiis exercitationem odit sapiente sequi!</p>
+
+    <p id="para"> *****ID SELECTOR*********** Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui modi,
+        inventore magni iste explicabo
+        necessitatibus, consectetur voluptates nam quo, sint non expedita. Et odit a eaque, deleniti modi nostrum
+        tempora!</p>
+
+    <p class="para">***** Class SELECTOR*********** Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui modi,
+        inventore magni iste explicabo
+        necessitatibus, consectetur voluptates nam quo, sint non expedita. Et odit a eaque, deleniti modi nostrum
+        tempora!</p> -->
+
+
+
+    <!-- <p>Outside Div </p>
+    <div>
+        <p>Inside Div.</p>
+        <section>
+            <p>Inside Section</p>
+            <section>
+                <p>Inside Section Section</p>
+            </section>
+        </section>
+        <p>inside div</p>
+    </div> -->
+    <!-- <h1>this is head1</h1> -->
+<!-- 
+    <p>Outside Div 1</p>
+    <p>Outside Div 2</p>
+
+    <h2>This is Heading</h2>
+
+    <p>Outside Div 3</p>
+    <p>Outside Div 4</p> -->
+
+
+
+    <label for="">Name : </label>
+    <input type="text" placeholder="Enter Your Name"><br>
+     <label for="">Email : </label>
+    <input type="email" placeholder="Enter Your Email"><br>
+     <label for="">Password : </label>
+    <input type="password" placeholder="Enter Your Password"><br>
+    <br>
+
+    <a href="https:\\www.google.com">Google</a>
+<br><br>
+ <a href="https://www.google.com/maps">GoogleMap</a>
+
+ <br><br>
+  <a href="https:\\www.facebook.com">Facebook</a>
+
+  <ul>
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Papaya</li>
+  </ul>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sapiente atque dolores, harum quis laborum. Optio magni doloribus, minima in corrupti recusandae. Odit, distinctio mollitia. Magnam voluptas rem esse sed.</p>
+
+</body>
+
+</html>

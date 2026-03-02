@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .parent {
+            width: 550px;
+            height: 550px;
+            background-color: red;
+            display: flex;
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: start; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: end; */
+            /* justify-content: left; */
+            /* justify-content: right; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* flex-direction: column; */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+            gap: 10px;
+
+
+        }
+
+        .child {
+            width: 80px;
+            height: 30px;
+            padding: 2px;
+            /* margin: 5px; */
+            background-color: green;
+            border: 2px solid yellow;
+            border-radius: 15px;
+            text-align: center;
+            /* flex-grow: 10; */
+            /* flex-shrink: 5; */
+            /* align-self: center; */
+            /* flex-basis: 200px; */
+
+            /* grow,shrink,basis */
+            /* flex: 1; */
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="child">Home</div>
+        <div class="child">About Us</div>
+        <div class="child">Sign Up</div>
+    </div>
+
+</body>
+
+</html>

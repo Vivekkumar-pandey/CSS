@@ -1,0 +1,16 @@
+/* External CSS */
+
+body{
+    background-color: black;
+}
+
+
+h1{
+    color: yellowgreen;
+    background-color: lightblue;
+}
+
+h2{
+    background-color: blueviolet;
+    color: aqua;
+}
