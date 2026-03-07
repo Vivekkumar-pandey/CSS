@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuerry</title>
+    <style>
+        /* 
+        @media(condition){
+            //Statements...
+        }
+        
+        mobile  0 - 600px
+        Tablet  601 - 900px
+        Laptoop  901 - 1200px
+        Desktop  1200px +
+
+        */
+
+        .h2{
+            background-color: red;
+            color: blue;
+            font-size: 50px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: normal;
+        }
+
+        /* @media( width:500px){
+
+            .h2{
+            background-color: yellow;
+            color: red;
+            }
+        } */
+
+
+          /* @media( max-width:600px){
+
+            .h2{
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            background-color: yellow;
+            color: red;
+            }
+        } */
+
+
+        @media(orientation: landscape){
+            body{
+                background: linear-gradient(to right , rgb(0, 8, 255), rgba(255, 255, 0, 0.281));
+            }
+        }
+
+          @media(orientation: portrait){
+            body{
+                background: linear-gradient(to right , rgb(197, 147, 104), rgba(112, 48, 190, 0.281));
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h2 class="h2">This Is Media Query</h2>
+    
+</body>
+</html>
