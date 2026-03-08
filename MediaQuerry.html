@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MediaQuerry</title>
     <style>
+
         /* 
         @media(condition){
             //Statements...
@@ -15,13 +17,16 @@
         Laptoop  901 - 1200px
         Desktop  1200px +
 
+
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
         */
 
-        .h2{
+        .h2 {
             background-color: red;
             color: blue;
             font-size: 50px;
-            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-family: 'Times New Roman', Times, serif;
             font-style: normal;
         }
 
@@ -34,7 +39,7 @@
         } */
 
 
-          /* @media( max-width:600px){
+        /* @media( max-width:600px){
 
             .h2{
             font-size: 30px;
@@ -46,24 +51,150 @@
         } */
 
 
-        @media(orientation: landscape){
+        /* Rotating Your Device */
+
+        /* @media(orientation: landscape){
             body{
                 background: linear-gradient(to right , rgb(0, 8, 255), rgba(255, 255, 0, 0.281));
             }
-        }
+        } */
 
-          @media(orientation: portrait){
+        /* @media(orientation: portrait){
             body{
                 background: linear-gradient(to right , rgb(197, 147, 104), rgba(112, 48, 190, 0.281));
             }
+        } */
+
+
+        /* Desktop */
+
+        /* @media(min-width : 1201px) {
+            body {
+                background: linear-gradient(to right, rgb(0, 8, 255), rgba(255, 255, 0, 0.281));
+            }
+        } */
+
+        /* Laptop */
+
+        /* @media((min-width:901px) and (max-width:1200px)) {
+            body {
+                background: linear-gradient(to right, rgb(237, 106, 24), rgba(103, 96, 184, 0.281), rgba(46, 211, 120, 0.881));
+            }
+        } */
+
+
+        /* Tablet */
+
+        /* @media((min-width:601px) and (max-width:900px)) {
+            body {
+                background: linear-gradient(to right, rgb(206, 107, 46), rgba(235, 239, 240, 0.281), rgba(46, 211, 120, 0.881));
+            }
+        } */
+
+
+        /* Mobile */
+
+        /* @media(max-width:600px) {
+            body {
+                   background: radial-gradient(circle at 90%  30%,rgba(232, 83, 225, 0.596),transparent , #000),
+                  radial-gradient(circle at 80%  70%,rgb(175, 144, 57),transparent , #000),
+                   radial-gradient(circle at 40%  60%,rgb(57, 175, 77),transparent , #000), radial-gradient(circle at 40%  70%,rgb(196, 140, 147),transparent , #000);
+            }
+        } */
+
+
+        /* .container{
+            width: 25%;
+            height: 150px;
+              background: linear-gradient(to right, rgb(206, 107, 46), rgba(235, 239, 240, 0.281), rgba(46, 211, 120, 0.881));
+              margin: 10px;
+              text-align: center;
+              font-size: 30px;
+              color: blue;
+              display: flex;
+              flex-direction: row;
+        } */
+
+
+        /* Mobile View */
+
+        /* @media(max-width:600px){
+            .container{
+                flex-direction: column;
+
+            }
+
+            .box{
+                width: 100%;
+            }
+        } */
+
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
         }
 
+        .card {
+            width: 25%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
+        .card div {
+            background-color: #eee;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+            ;
+        }
+
+        /* Tablet View */
+
+        @media(max-width:900px) {
+            .card {
+                width: 50%;
+            }
+        }
+
+        /* Mobile View */
+
+        @media(max-width:600px) {
+            .card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-    <h2 class="h2">This Is Media Query</h2>
-    
+    <!-- <h2 class="h2">This Is Media Query</h2> -->
+
+    <!-- <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </div> -->
+
+
+    <div class="container">
+        <div class="card">
+            <div>Product 1</div>
+        </div>
+        <div class="card">
+            <div>Product 2</div>
+        </div>
+        <div class="card">
+            <div>Product 3</div>
+        </div>
+        <div class="card">
+            <div>Product 4</div>
+        </div>
+    </div>
+
+
 </body>
+
 </html>
